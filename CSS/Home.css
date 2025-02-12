@@ -1,0 +1,448 @@
+/* Main css */
+:root {
+    --heroBC: whitesmoke;
+}
+body {
+    overflow-x: scroll;
+}
+
+/* 1 Section */
+#topSection {
+    height: 200vh;
+    margin-bottom: 100px;
+    #x {
+        position: absolute;
+        top: 180px;
+        left: 44vw;
+        z-index: 2;
+        color: #ff4500;
+        font-size: 5vw;
+    }
+    .title {
+        position: absolute;
+        top: 180px;
+        left: 47vw;
+        z-index: 2;
+        color: whitesmoke;
+        font-size: 5vw;
+    }
+    img {
+        position: relative;
+        top: 25px;
+        width: 95vw;
+        border-radius: 40px;
+        filter: brightness(70%);
+    }
+    h2 {
+        position: absolute;
+        left: 18vw;
+        top: 300px;
+        color: bisque;
+        z-index: 2;
+        font-size: 5vw;
+    }
+    #x2 {
+        position: absolute;
+        top: 18.5%;
+        left: 40%;
+        color: #ff4500;
+        font-size: 30vw;
+        font-weight: 100;
+        animation: letterX 1s ease-in-out both;
+        animation-timeline: view();
+    }
+    .phrase {
+        font-size: 3vw;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-weight: 600;
+        width: fit-content;
+    }
+    .o {
+        position: relative;
+        top: 24%;
+        left: 15%;
+        animation: fade-in 1s linear both;
+        animation-timeline: view();
+    }
+    .t {
+        position: relative;
+        top: 18.5%;
+        left: 60%;
+        animation: fade-in 1s linear both;
+        animation-timeline: view();
+    }
+    .tt {
+        position: relative;
+        bottom: 5%;
+        left: 38%;
+        animation: fade-in2 1s linear both;
+        animation-timeline: view();
+    }
+    .f {
+        position: relative;
+        top: 23%;
+        left: 33%;
+        animation: fade-in3 1s linear both;
+        animation-timeline: view();
+    }
+}
+@keyframes letterX {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in2 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in3 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+/* 2 Section */
+#hero {
+    margin: 120px 0px 220px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    gap: 60px;
+    #heroText {
+        text-align: center;
+        span {
+            color: #ff4500;
+        }
+        font-size: clamp(14px,1.7vw,25px);
+    }
+    #wrapper {
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        grid-gap: 40px;
+        overflow-x: scroll;
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        .heroDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: var(--heroBC);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            width: 220px;
+            height: 240px;
+            .heroImg {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 0px;
+                img {
+                    width: 200px;
+                    height: 220px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* 3 Section */
+#gymDescription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    width: 100vw;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    div {
+        width: 50vw;
+        h2 {
+            font-weight: 500;
+            color: #ff4500;
+        }
+        p {
+            font-size: max(14px, 1.4vw);
+        }
+    }
+    img {
+        position: relative;
+        width: max(240px, 33vw);
+        height: fit-content;
+        border-radius: 20px;
+        border: 2px solid #242424;
+    }
+}
+
+/* msg */
+{
+.card {
+    width: 330px;
+    height: 80px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.wave {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -31px;
+    top: 32px;
+    width: 80px;
+    fill: #fc0c0c3a;
+}
+
+.icon-container {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc0c0c48;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.icon {
+    width: 17px;
+    height: 17px;
+    color: #d10d0d;
+}
+
+.message-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.message-text,
+.sub-text {
+    margin: 0;
+    cursor: default;
+}
+
+.message-text {
+    color: #d10d0d;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.cross-icon {
+    width: 18px;
+    height: 18px;
+    color: #555;
+    cursor: pointer;
+}
+/* Success Popup Styles */
+.card {
+    width: 330px;
+    height: 80px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.wave {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -31px;
+    top: 32px;
+    width: 80px;
+    fill: #04e4003a;
+}
+
+.icon-container {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04e40048;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.icon {
+    width: 17px;
+    height: 17px;
+    color: #269b24;
+}
+
+.message-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.message-text,
+.sub-text {
+    margin: 0;
+    cursor: default;
+}
+
+.message-text {
+    color: #269b24;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.cross-icon {
+    width: 18px;
+    height: 18px;
+    color: #555;
+    cursor: pointer;
+}
+}
+
+/* Media Queries */
+@media (max-width: 1390px) {
+    #topSection {
+        height: 100vh;
+        .phrase, #x2 {
+            display: none;
+        }
+    }
+}
+@media (max-width: 1150px){
+
+}
+@media (max-width: 990px) {
+    #topSection {
+        height: fit-content;
+    }
+    #gymDescription {
+        gap: 35px;
+        h2 {
+            font-size: 22px;
+        }
+    }
+    #hero {
+        #wrapper {
+            grid-gap: 20px;
+            .heroDiv {
+                width: 170px;
+                height: 190px;
+                img {
+                    width: 150px !important;
+                    height: 170px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 670px) {
+    #topSection {
+        #x, .title {
+            top: 140px;
+        }
+        h2 {
+            top: 220px;
+        }
+    }
+    #gymDescription {
+        flex-direction: column;
+        h2 {
+            font-size: 20px;
+        }
+    }
+    #hero {
+        margin: 50px 0px 80px 0px;
+        gap: 30px;
+        #wrapper {
+            grid-gap: 10px;
+            .heroDiv {
+                width: 120px;   
+                height: 140px;
+                img {
+                    width: 110px !important;
+                    height: 130px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 490px) {
+    #topSection {
+        #x, .title {
+            top: 120px;
+        }
+        h2 {
+            top: 180px;
+        }
+    }
+}

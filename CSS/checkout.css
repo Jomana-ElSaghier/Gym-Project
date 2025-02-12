@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   background-color:   whitesmoke; 
+}
+
+.checkout-container {
+    background-color: white; /* Use theme's container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px; /* Reduced max-width to make the container smaller */
+    margin: 20px;
+}
+
+/* Order Summary */
+#order-summary {
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+#order-summary h2 {
+    font-size: 1.3rem; /* Slightly smaller font size */
+    color: #333; /* Use theme's font color */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.cart-items {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px; /* Reduced padding */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0; /* Reduced padding */
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #333; /* Use theme's font color */
+}
+
+.order-total p {
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #333; /* Use theme's font color */
+    margin: 8px 0; /* Reduced margin */
+}
+
+.order-total span {
+    float: right;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1.3rem; /* Slightly smaller font size */
+    color: #333; /* Use theme's font color */
+}
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the top */
+    gap: 10px; /* Add space between the form and the card */
+}
+.payment-form {
+    flex: 1;
+    
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px; /* Reduced margin */
+    font-weight: bold;
+    color: var(--body-font-color); /* Use theme's font color */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    transition: border-color 0.3s ease;
+    background-color: var(--search-background-color); /* Use theme's search background */
+    color: var(--search-font-color); /* Use theme's search font color */
+}
+
+.form-group input:focus {
+    border-color: #ff4500; /* Use theme's orange color */
+    outline: none;
+    
+}
+
+.submit-btn-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 30px; /* Add some space above the button */
+}
+.submit-btn {
+    width: 40%;
+    padding: 8px; /* Reduced padding */
+    background-color: #ff4500; /* Use theme's orange color */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e03e00; /* Darker shade of orange for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .checkout-container {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .form-group input {
+        padding: 5px; /* Reduced padding for smaller screens */
+    }
+
+    .submit-btn {
+        padding: 7px; /* Reduced padding for smaller screens */
+        font-size: 0.8rem; /* Slightly smaller font size for smaller screens */
+    }
+}
+/* From Uiverse.io by Praashoo7 */ 
+.flip-card {
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+    margin-top: 60px;
+    margin-right:30px ;
+  }
+  
+  .heading_8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+  }
+  
+  .chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+  
+  .contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+  }
+  
+  .number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .6em;
+    top: 8.3em;
+    left: 1.6em;
+  }
+  
+  .valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+  }
+  
+  .date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+  }
+  
+  .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+  }
+  
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+  }
+  
+  .sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+  }
+  
+  .code {
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: black;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+  }
+  
+  .flip-card-back {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+    transform: rotateY(180deg);
+  }

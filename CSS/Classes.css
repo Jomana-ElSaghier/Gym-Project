@@ -1,0 +1,52 @@
+:root {
+    --tableColor: #f2f2f2;
+    --tableColor2: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 20px 0;
+}
+
+thead tr {
+    background-color: #4caf50;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead tr {
+        font-size: 16px;
+    }
+}
+
+#mainSectionClasses {
+    margin: 100px;
+    td {
+        background-color: var(--tableColor);
+        color: var(--tableColor2);
+    }
+}

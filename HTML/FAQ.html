@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="eg">
+  <head>
+    <title>FAQ | XFIT</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../CSS/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body onload="onload('FAQs')">
+    <div id="scrollBar"></div>
+
+    <header>
+      <div id="topLeftHeader">
+          <button id="menuBtn" onclick="showHideMenu()">
+              <svg viewBox="0 0 80 80" width="20" height="20">
+                  <line x1="0" y1="15" x2="80" y2="15" stroke="var(--header-font-color)" stroke-width="13"></line>
+                  <line x1="0" y1="40" x2="80" y2="40" stroke="var(--header-font-color)" stroke-width="13"></line>
+                  <line x1="0" y1="65" x2="80" y2="65" stroke="var(--header-font-color)" stroke-width="13"></line>
+              </svg>
+          </button>
+          <h1 id="headerLogo">XFIT</h1>
+          <label class="theme-switch">
+              <input id="dark-lightCheckbox" type="checkbox" class="theme-switch__checkbox" onclick="dark('FAQs')" />
+              <div class="theme-switch__container">
+                  <div class="theme-switch__clouds"></div>
+                  <div class="theme-switch__stars-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                              fill="currentColor"></path>
+                      </svg>
+                  </div>
+                  <div class="theme-switch__circle-container">
+                      <div class="theme-switch__sun-moon-container">
+                          <div class="theme-switch__moon">
+                              <div class="theme-switch__spot"></div>
+                              <div class="theme-switch__spot"></div>
+                              <div class="theme-switch__spot"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </label>
+      </div>
+
+      <nav>
+          <ul id="headerMenu">
+              <span>
+                  <li><a class="mainLink" href="Home.html">Home</a></li>
+              </span>
+              <span>
+                  <li><a class="mainLink" href="Events.html">Events</a></li>
+              </span>
+              <li id="headerMenu2">
+                  <span>
+                      <a href="#">Services</a>
+                      <svg id="SMI2" width="17px" height="17px" viewBox="0 0 1024 1024" class="arrowUpIcon"
+                          xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
+                          <g stroke-width="0"></g>
+                          <g stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g>
+                              <path fill="#000000"
+                                  d="M488.832 344.32l-339.84 356.672a32 32 0 000 44.16l.384.384a29.44 29.44 0 0042.688 0l320-335.872 319.872 335.872a29.44 29.44 0 0042.688 0l.384-.384a32 32 0 000-44.16L535.168 344.32a32 32 0 00-46.336 0z">
+                              </path>
+                          </g>
+                      </svg>
+                  </span>
+                  <svg id="subMenuIcon2-2" viewBox="0 0 200 200" width="90px" height="25px" fill="white">
+                      <polygon points="100,80 20,200 180,200"></polygon>
+                  </svg>
+                  <ul id="subMenu2">
+                      <li><a href="Store.html">Store</a></li>
+                      <li><a href="Memberships.html">Memberships</a></li>
+                      <li><a href="Classes.html">Classes</a></li>
+                  </ul>
+              </li>
+              <span>
+                  <li><a id="active" class="mainLink" href="#">FAQs</a></li>
+              </span>
+              <li><a class="mainLink" href="#footer">Contact Us</a></li>
+          </ul>
+      </nav>
+
+      <div id="searchContainer">
+          <svg class="icon" fill="var(--header-font-color)" aria-hidden="true" viewBox="0 0 24 24">
+              <g>
+                  <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                  </path>
+              </g>
+          </svg>
+          <input id="searchText" placeholder="Search" type="search" class="input"
+              onkeypress="handleKeyPress(event)" />
+      </div>
+    </header>
+
+    <section id="menu">
+      <div>
+          <span><a href="Home.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="var(--header-font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M9 22V12H15V22" stroke="var(--header-font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>Home</a></span>
+          <span><a href="Events.html"><svg fill="var(--header-font-color)" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" width="24px" height="24px"><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;} </style> <g> <path d="M20,7.4v10.5c0,1.7-1.3,3-3,3H5.9c0,1.1,0.9,2,2,2H18c2.2,0,4-1.8,4-4V9.4C22,8.3,21.1,7.4,20,7.4z"></path> <g> <path d="M5,1.1v2H4c-1.1,0-2,0.9-2,2v12c0,1.1,0.9,2,2,2h12.2c1.1,0,2-0.9,2-2v-12c0-1.1-0.9-2-2-2h-1v-2h-2v2H7v-2 C7,1.1,5,1.1,5,1.1z M4,8.1h12.2v9H4V8.1z"></path> <path d="M13.7,16.3l-2.4-1.4L9,16.3l0.6-2.7l-2.1-1.8l2.8-0.2L11.4,9l1.1,2.5l2.8,0.3l-2.1,1.8L13.7,16.3z"></path> </g> </g> <rect class="st0" width="24" height="24"></rect> </g>
+              </svg>Events</a></span>
+          <span><a href="Memberships.html"><svg width="24px" height="24px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="var(--header-font-color)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#00000" d="M15 3v10h-14v-10h14zM16 2h-16v12h16v-12z"></path> <path fill="#00000" d="M8 5h6v1h-6v-1z"></path> <path fill="#00000" d="M8 7h6v1h-6v-1z"></path> <path fill="#00000" d="M8 9h3v1h-3v-1z"></path> <path fill="#00000" d="M5.4 7h-0.4v-0.1c0.6-0.2 1-0.8 1-1.4 0-0.8-0.7-1.5-1.5-1.5s-1.5 0.7-1.5 1.5c0 0.7 0.4 1.2 1 1.4v0.1h-0.4c-0.9 0-1.6 0.7-1.6 1.6v2.4h5v-2.4c0-0.9-0.7-1.6-1.6-1.6z"></path> </g>
+              </svg>Memberships</a></span>
+          <span><a href="Classes.html"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="var(--header-font-color)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.0932 10.7463C10.1827 10.6184 10.2571 10.5122 10.3233 10.4213C10.3793 10.5188 10.4418 10.6324 10.517 10.7692L12.2273 13.8788C12.3933 14.1809 12.5562 14.4771 12.7197 14.6921C12.8947 14.9222 13.2023 15.2374 13.6954 15.2467C14.1884 15.2559 14.5077 14.9525 14.6912 14.7292C14.8627 14.5205 15.0365 14.2305 15.2138 13.9349L15.2692 13.8426C15.49 13.4745 15.629 13.2445 15.752 13.0783C15.8654 12.9251 15.9309 12.8752 15.9798 12.8475C16.0286 12.8198 16.1052 12.7894 16.2948 12.771C16.5006 12.751 16.7694 12.7501 17.1986 12.7501H18C18.4142 12.7501 18.75 12.4144 18.75 12.0001C18.75 11.5859 18.4142 11.2501 18 11.2501L17.1662 11.2501C16.7791 11.2501 16.4367 11.2501 16.1497 11.278C15.8385 11.3082 15.5357 11.3752 15.2407 11.5422C14.9457 11.7092 14.7325 11.9345 14.5465 12.1857C14.3749 12.4175 14.1988 12.7111 13.9996 13.0431L13.9521 13.1223C13.8654 13.2668 13.793 13.3872 13.7284 13.4906C13.6676 13.3849 13.5999 13.2618 13.5186 13.1141L11.8092 10.006C11.6551 9.72563 11.5015 9.44629 11.3458 9.2415C11.1756 9.01778 10.8839 8.72197 10.4164 8.69673C9.94887 8.67149 9.62698 8.93417 9.43373 9.13826C9.25683 9.32509 9.0741 9.58628 8.89069 9.84844L8.58131 10.2904C8.35416 10.6149 8.21175 10.8171 8.08848 10.9629C7.975 11.0972 7.91193 11.1411 7.86538 11.1654C7.81882 11.1896 7.74663 11.2161 7.57159 11.2321C7.38144 11.2494 7.13413 11.2501 6.73803 11.2501H6C5.58579 11.2501 5.25 11.5859 5.25 12.0001C5.25 12.4144 5.58579 12.7501 6 12.7501L6.76812 12.7501C7.12509 12.7502 7.44153 12.7502 7.70801 12.7258C7.99707 12.6994 8.27904 12.6411 8.55809 12.4958C8.83714 12.3506 9.04661 12.153 9.234 11.9313C9.40676 11.727 9.58821 11.4677 9.79291 11.1753L10.0932 10.7463Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.75 9.26043C22.75 6.07929 21.2578 3.60642 18.9755 2.65694C16.8461 1.77108 14.2743 2.30955 12 4.43676C9.72568 2.30955 7.15386 1.77113 5.02447 2.65702C2.74218 3.60652 1.25 6.07939 1.25 9.26046C1.25 11.3863 2.37926 13.4794 3.7862 15.2825C5.20736 17.1039 6.99532 18.735 8.48775 19.952L8.62247 20.062C9.82232 21.0418 10.6895 21.75 12 21.75C13.3105 21.75 14.1777 21.0418 15.3775 20.062L15.5123 19.952C17.0047 18.735 18.7926 17.104 20.2138 15.2826C21.6207 13.4794 22.75 11.3863 22.75 9.26043ZM12.5491 6.00969C14.6472 3.75481 16.827 3.38777 18.3994 4.04187C19.9921 4.70447 21.25 6.53048 21.25 9.26043C21.25 10.8822 20.3695 12.6446 19.0312 14.3598C17.7071 16.0569 16.0142 17.6072 14.5643 18.7895C13.1713 19.9255 12.7216 20.25 12 20.25C11.2785 20.25 10.8287 19.9255 9.43571 18.7895C7.98585 17.6072 6.29293 16.0568 4.96881 14.3598C3.63045 12.6445 2.75 10.8821 2.75 9.26046C2.75 6.5306 4.0079 4.70457 5.60065 4.04194C7.17297 3.38781 9.35285 3.75482 11.4509 6.00969C11.5928 6.16218 11.7917 6.2488 12 6.2488C12.2083 6.2488 12.4072 6.16218 12.5491 6.00969Z" fill="#000000"></path> </g>
+          </svg>Classes</a></span>
+          <span><a href="Store.html"><svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 11V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10.9673M10.4 21H13.6C15.8402 21 16.9603 21 17.816 20.564C18.5686 20.1805 19.1805 19.5686 19.564 18.816C20 17.9603 20 16.8402 20 14.6V12.2C20 11.0799 20 10.5198 19.782 10.092C19.5903 9.71569 19.2843 9.40973 18.908 9.21799C18.4802 9 17.9201 9 16.8 9H7.2C6.0799 9 5.51984 9 5.09202 9.21799C4.71569 9.40973 4.40973 9.71569 4.21799 10.092C4 10.5198 4 11.0799 4 12.2V14.6C4 16.8402 4 17.9603 4.43597 18.816C4.81947 19.5686 5.43139 20.1805 6.18404 20.564C7.03968 21 8.15979 21 10.4 21Z" stroke="var(--header-font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+              </svg>Store</a></span>
+          <span><a href="FAQ.html"><svg fill="var(--header-font-color)" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12,1A11,11,0,1,0,23,12,11.013,11.013,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9.011,9.011,0,0,1,12,21Zm1-4.5v2H11v-2Zm3-7a3.984,3.984,0,0,1-1.5,3.122A3.862,3.862,0,0,0,13.063,15H11.031a5.813,5.813,0,0,1,2.219-3.936A2,2,0,0,0,13.1,7.832a2.057,2.057,0,0,0-2-.14A1.939,1.939,0,0,0,10,9.5,1,1,0,0,1,8,9.5V9.5a3.909,3.909,0,0,1,2.319-3.647,4.061,4.061,0,0,1,3.889.315A4,4,0,0,1,16,9.5Z"></path></g>
+              </svg> FAQs</a></span>
+          <span><a href="#footer"><svg width="24px" height="24px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M15.668 6.017c-0.957-3.557-3.863-6.017-7.168-6.017-3.295 0-6.212 2.464-7.168 6.017-0.747 0.082-1.332 0.712-1.332 1.483v4c0 0.625 0.382 1.16 0.924 1.385 0.194 1.747 1.663 3.115 3.461 3.115h2.707c0.207 0.581 0.757 1 1.408 1h3c0.827 0 1.5-0.673 1.5-1.5s-0.673-1.5-1.5-1.5h-3c-0.651 0-1.201 0.419-1.408 1h-2.707c-1.208 0-2.217-0.86-2.449-2h1.064v-1h1v-5h-1v-1h-0.606c0.913-2.961 3.352-5 6.106-5 2.762 0 5.193 2.037 6.106 5h-0.606v1h-1v5h1v1h1.506c0.824 0 1.494-0.673 1.494-1.5v-4c0-0.771-0.585-1.401-1.332-1.483zM8.5 15h3c0.275 0 0.5 0.224 0.5 0.5s-0.225 0.5-0.5 0.5h-3c-0.275 0-0.5-0.224-0.5-0.5s0.225-0.5 0.5-0.5zM2 12h-0.506c-0.272 0-0.494-0.224-0.494-0.5v-4c0-0.276 0.222-0.5 0.494-0.5h0.506v5zM16 11.5c0 0.276-0.222 0.5-0.494 0.5h-0.506v-5h0.506c0.272 0 0.494 0.224 0.494 0.5v4z" fill="var(--header-font-color)"></path></g>
+                  </svg>Contact Us</a></span>
+      </div>
+    </section>
+
+    <section id="topSectionFAQ">
+      <h1 class="webTitle"><span>X</span>FIT</h1>
+      <h1 id="topSectionFAQ-title">requently sked uestions</h1>
+      <h1 id="letterF">F</h1>
+      <h1 id="letterA">A</h1>
+      <h1 id="letterQ">Q</h1>
+    </section>
+
+    <section id="mainSectionFAQ"> <!-- First Title: Membership -->
+      <h1 class="mainSectionFAQ-titles">Membership</h1>
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(1)">
+        <h2 class="question">What types of memberships do you offer?</h2>
+        <img id="img1" src="../../Media/show_more.png" />
+      </div>
+      <p id="answer1">
+        We offer a variety of memberships including monthly, annual, and day
+        passes. Each membership type grants access to our facilities and
+        amenities.
+      </p>
+      <hr />
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(2)">
+        <h2 class="question">
+          Can I try out the gym before committing to a membership?
+        </h2>
+        <img id="img2" src="../../Media/show_more.png" />
+      </div>
+      <p id="answer2">
+        Yes, we offer a complimentary trial session for all first-time visitors.
+        You can experience our facilities and services before making a
+        commitment.
+      </p>
+      <hr />
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(3)">
+        <h2 class="question">
+          Do you offer discounts for students, seniors, or other groups?
+        </h2>
+        <img id="img3" src="../Media/show_more.png" />
+      </div>
+      <p id="answer3">
+        Yes, we offer discounts for students, seniors, military personnel, and
+        other qualifying groups. Please inquire at our front desk for more
+        information.
+      </p>
+      <hr />
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(4)">
+        <h2 class="question">
+          What is the duration of your membership contracts?
+        </h2>
+        <img id="img4" src="../Media/show_more.png" />
+      </div>
+      <p id="answer4">
+        Our membership contracts typically range from 1 month to 1 year,
+        depending on your preference and needs.
+      </p>
+      <hr />
+
+      <!-- Second Title: Gym Information -->
+      <h1 class="mainSectionFAQ-titles">Gym Information</h1>
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(5)">
+        <h2 class="question">What are your gym's operating hours?</h2>
+        <img id="img5" src="../Media/show_more.png" />
+      </div>
+      <p id="answer5">
+        Our gym is open from 5:00 AM to 11:00 PM, Monday through Saturday, and
+        from 7:00 AM to 9:00 PM on Sundays.
+      </p>
+      <hr />
+
+      <!-- Third Title: Services -->
+      <h1 class="mainSectionFAQ-titles">Services</h1>
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(6)">
+        <h2 class="question">Do you offer personal training services?</h2>
+        <img id="img6" src="../Media/show_more.png" />
+      </div>
+      <p id="answer6">
+        Yes, we have certified personal trainers available to help you reach
+        your fitness goals. You can book sessions with them at your convenience.
+      </p>
+      <hr />
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(7)">
+        <h2 class="question">
+          Are group fitness classes included in my membership?
+        </h2>
+        <img id="img7" src="../Media/show_more.png" />
+      </div>
+      <p id="answer7">
+        Yes, group fitness classes are included in most of our membership
+        packages. Check with our staff for specific details.
+      </p>
+      <hr />
+
+      <div class="mainSectionFAQ-questionBox" onclick="reveal(8)">
+        <h2 class="question">
+          Do you provide nutritional guidance or dietary plans?
+        </h2>
+        <img id="img8" src="../Media/show_more.png" />
+      </div>
+      <p id="answer8">
+        Yes, we offer nutritional guidance and can provide dietary plans
+        tailored to your fitness goals. Our staff can assist you in creating a
+        customized nutrition plan.
+      </p>
+      <hr />
+    </section>
+
+    <section> <!-- Feedback Section -->
+      <div id="feedbackIcon-container">
+        <svg id="feedbackIcon" title="Feedback" onclick="feedback()" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M8 10.5H16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 14H13.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22C17.5228 22 22 17.5228 22 12C22 10.1786 21.513 8.47087 20.6622 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+      </div>
+      <div id="feedbackForm-container">
+        <span id="feedbackForm-containerTitle">
+          <h5>Team XFIT</h5>
+          <h6>We typically reply in a few minutes</h6>
+        </span>
+        <span id="feedbackForm-chat">
+          <h1>XFIT </h1>
+          <p>Have questions about XFIT? Our Support Team is available Monday - Friday, 9am - 6pm ET. Tell us how we can help, and we will reply as soon as we can!</p>
+        </span>
+        <span id="feedbackForm-massage">
+          <input id="sendMassage" type="text" placeholder="Write a massage">
+          <img id="sendMassage-icon" src="../Media/Send.png" title="Send" href="#">
+        </span>
+      </div>
+    </section>
+
+    <section> <!-- Back To Top Button -->
+      <a id="backToTopLink" href="#topSectionFAQ">
+        <svg fill="#ffffff" height="18px" width="18px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.735 511.735" xml:space="preserve" stroke="#ffffff" stroke-width="20px"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M508.788,371.087L263.455,125.753c-4.16-4.16-10.88-4.16-15.04,0L2.975,371.087c-4.053,4.267-3.947,10.987,0.213,15.04 c4.16,3.947,10.667,3.947,14.827,0l237.867-237.76l237.76,237.76c4.267,4.053,10.987,3.947,15.04-0.213 C512.734,381.753,512.734,375.247,508.788,371.087z"></path> </g> </g> </g></svg>
+      </a>
+    </section>
+
+    <footer id="footer">
+      <div id="footerInfo">
+          <h1><span>X</span>FIT</h1>
+          <p> XFIT is Egypt's premier fitness center, offering state-of-the-art equipment and personalized training
+              services. With a diverse range of options including cardio, strength training, and group classes, XFIT
+              caters to all fitness levels. Experienced trainers provide tailored workout plans, fostering a
+              supportive community atmosphere. Whether you're a beginner or a seasoned athlete, XFIT is dedicated to
+              helping you achieve your fitness goals in a vibrant and inclusive environment. </p>
+      </div>
+
+      <div id="footerInfo2">
+          <div>
+              <h5>Our Services</h5>
+              <a href="Events.html">Events</a>
+              <a href="Store.html">Store</a>
+              <a href="Memberships.html">Memberships</a>
+              <a href="Classes.html">Classes</a>
+          </div>
+
+          <div>
+              <h5>Company</h5>
+              <a>Terms Of Use</a>
+              <a>Privacy Policy</a>
+          </div>
+
+          <div>
+              <h5>Contact Us</h5>
+              <a>Facebook</a>
+              <a>Twitter</a>
+              <a>Instagram</a>
+              <a>LinkedIn</a>
+              <a>+201234567</a>
+          </div>
+      </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

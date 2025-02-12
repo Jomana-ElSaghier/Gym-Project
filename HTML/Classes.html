@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="eg">
+    <head>
+        <title>Classes | XFIT</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../CSS/stylesheet.css" rel="stylesheet" />
+        <link href="../CSS/Classes.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire-animation" />
+    </head>
+    <body onload="onload('Classes')">
+        <div id="scrollBar"></div>
+
+        <header>
+            <!-- Header -->
+            <div id="topLeftHeader">
+                <button id="menuBtn" onclick="showHideMenu()">
+                    <svg viewBox="0 0 80 80" width="20" height="20">
+                        <line x1="0" y1="15" x2="80" y2="15" stroke="var(--header-font-color)" stroke-width="13"></line>
+                        <line x1="0" y1="40" x2="80" y2="40" stroke="var(--header-font-color)" stroke-width="13"></line>
+                        <line x1="0" y1="65" x2="80" y2="65" stroke="var(--header-font-color)" stroke-width="13"></line>
+                    </svg>
+                </button>
+                <h1 id="headerLogo">XFIT</h1>
+                <label class="theme-switch">
+                    <input id="dark-lightCheckbox" type="checkbox" class="theme-switch__checkbox" onclick="dark('Classes')" />
+                    <div class="theme-switch__container">
+                        <div class="theme-switch__clouds"></div>
+                        <div class="theme-switch__stars-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <div class="theme-switch__circle-container">
+                            <div class="theme-switch__sun-moon-container">
+                                <div class="theme-switch__moon">
+                                    <div class="theme-switch__spot"></div>
+                                    <div class="theme-switch__spot"></div>
+                                    <div class="theme-switch__spot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <nav>
+                <ul id="headerMenu">
+                    <span>
+                        <li><a class="mainLink" href="Home.html">Home</a></li>
+                    </span>
+                    <span>
+                        <li><a class="mainLink" href="Events.html">Events</a></li>
+                    </span>
+                    <li id="headerMenu2">
+                        <span>
+                            <a id="active"  href="#">Services</a>
+                            <svg id="SMI2" width="17px" height="17px" viewBox="0 0 1024 1024" class="arrowUpIcon" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
+                                <g stroke-width="0"></g>
+                                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g>
+                                    <path fill="#000000" d="M488.832 344.32l-339.84 356.672a32 32 0 000 44.16l.384.384a29.44 29.44 0 0042.688 0l320-335.872 319.872 335.872a29.44 29.44 0 0042.688 0l.384-.384a32 32 0 000-44.16L535.168 344.32a32 32 0 00-46.336 0z"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        <svg id="subMenuIcon2-2" viewBox="0 0 200 200" width="90px" height="25px" fill="white">
+                            <polygon points="100,80 20,200 180,200"></polygon>
+                        </svg>
+                        <ul id="subMenu2">
+                            <li><a href="Store.html">Store</a></li>
+                            <li><a href="Memberships.html">Memberships</a></li>
+                            <li><a id="activeOption" href="Classes.html">Classes</a></li>
+                        </ul>
+                    </li>
+                    <span>
+                        <li><a class="mainLink" href="#">About</a></li>
+                    </span>
+                    <li><a class="mainLink" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div id="searchContainer">
+                <svg class="icon" fill="var(--header-font-color)" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input id="searchText" placeholder="Search" type="search" class="input" onkeypress="handleKeyPress(event)" />
+            </div>
+        </header>
+
+        <section id="mainSectionClasses">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Duration</th>
+                        <th>Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Yoga</td>
+                        <td>Improve flexibility and reduce stress with guided yoga sessions.</td>
+                        <td>200 EGP</td>
+                        <td>60 minutes</td>
+                        <td>Mon, Wed, Fri - 7:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Spin Class</td>
+                        <td>High-intensity cycling workout for all fitness levels.</td>
+                        <td>100 EGP</td>
+                        <td>45 minutes</td>
+                        <td>Tue, Thu - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>HIIT</td>
+                        <td>High-Intensity Interval Training to burn calories fast.</td>
+                        <td>250 EGP</td>
+                        <td>30 minutes</td>
+                        <td>Mon, Wed, Fri - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Zumba</td>
+                        <td>Fun and energetic dance workouts to vibrant music.</td>
+                        <td>250 EGP</td>
+                        <td>50 minutes</td>
+                        <td>Sat - 10:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Pilates</td>
+                        <td>Core-strengthening exercises with a focus on posture and balance.</td>
+                        <td>150 EGP</td>
+                        <td>60 minutes</td>
+                        <td>Tue, Thu - 8:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Boxing</td>
+                        <td>Build strength and endurance through professional boxing training sessions.</td>
+                        <td>300 EGP</td>
+                        <td>60 minutes</td>
+                        <td>Wed, Fri - 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Strength Training</td>
+                        <td>Focus on muscle building and toning with guided strength exercises.</td>
+                        <td>300 EGP</td>
+                        <td>45 minutes</td>
+                        <td>Tue, Thu - 7:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Cardio Blast</td>
+                        <td>Fast-paced workouts designed to improve cardiovascular fitness.</td>
+                        <td>200 EGP</td>
+                        <td>30 minutes</td>
+                        <td>Mon, Wed, Fri - 8:00 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section> <!-- Feedback Section -->
+            <div id="feedbackIcon-container">
+                <svg id="feedbackIcon" title="Feedback" onclick="feedback()" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g>
+                        <path d="M8 10.5H16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M8 14H13.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22C17.5228 22 22 17.5228 22 12C22 10.1786 21.513 8.47087 20.6622 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div id="feedbackForm-container">
+                <span id="feedbackForm-containerTitle">
+                    <h5>Team XFIT</h5>
+                    <h6>We typically reply in a few minutes</h6>
+                </span>
+                <span id="feedbackForm-chat">
+                    <h1>XFIT </h1>
+                    <p>Have questions about XFIT? Our Support Team is available Monday - Friday, 9am - 6pm ET. Tell us how we can help, and we will reply as soon as we can!</p>
+                </span>
+                <span id="feedbackForm-massage">
+                    <input id="sendMassage" type="text" placeholder="Write a massage" />
+                    <img id="sendMassage-icon" src="../Media/Send.png" title="Send" href="#" />
+                </span>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footerInfo">
+                <h1><span>X</span>FIT</h1>
+                <p> XFIT is Egypt's premier fitness center, offering state-of-the-art equipment and personalized training services. With a diverse range of options including cardio, strength training, and group classes, XFIT caters to all fitness levels. Experienced trainers provide tailored workout plans, fostering a supportive community atmosphere. Whether you're a beginner or a seasoned athlete, XFIT is dedicated to helping you achieve your fitness goals in a vibrant and inclusive environment. </p>
+            </div>
+
+            <div id="footerInfo2">
+                <div>
+                    <h5>Our Services</h5>
+                    <a>About Us</a>
+                    <a>Our Events</a>
+                    <a>pricing</a>
+                    <a>Health Center</a>
+                    <a>Login</a>
+                </div>
+
+                <div>
+                    <h5>Company</h5>
+                    <a>Terms Of Use</a>
+                    <a>Contact Us</a>
+                    <a>Privacy Policy</a>
+                </div>
+
+                <div>
+                    <h5>Follow Us</h5>
+                    <a>Facebook</a>
+                    <a>Twitter</a>
+                    <a>Instagram</a>
+                    <a>LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../JS/script.js"></script>
+        <script src="../JS/home.js"></script>
+    </body>
+</html>
