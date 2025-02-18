@@ -405,7 +405,7 @@ function calculateTotalPrice() {
 
 function redirectToCheckout() {
   const totalPrice = calculateTotalPrice();
-  window.location.href = `checkout.html?total=${totalPrice}`; 
+  window.location.href = `Checkout.html?total=${totalPrice}`; 
 }
 
 function  updateCheckoutButtonVisibility() {
