@@ -144,30 +144,30 @@ function validatePaymentForm() {
 
     // Simple validation checks
     if (!cardNumber || !expiryDate || !cvv || !cardHolder) {
-        window.location.href = "/Home.html?status=error&message=Something+wrong+happened";
+        window.location.href = "./Home.html?status=error&message=Something+wrong+happened";
         return false; // Prevent form submission
     }
 
     // Validate CVV is exactly 3 digits
     if (cvv.length !== 3 || !/^\d{3}$/.test(cvv)) {
-        window.location.href = "/Home.html?status=error&message=Something+wrong+happened";
+        window.location.href = "./Home.html?status=error&message=Something+wrong+happened";
         return false; // Prevent form submission
     }
 
     // Validate card number is exactly 16 digits
     if (cardNumber.length !== 16 || !/^\d{16}$/.test(cardNumber)) {
-        window.location.href = "/Home.html?status=error&message=Something+wrong+happened";
+        window.location.href = "./Home.html?status=error&message=Something+wrong+happened";
         return false; // Prevent form submission
     }
 
     // Validate expiry date format (MM/YY)
     if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate)) {
-        window.location.href = "/Home.html?status=error&message=Something+wrong+happened";
+        window.location.href = "./Home.html?status=error&message=Something+wrong+happened";
         return false; // Prevent form submission
     }
 
     // If all validations pass, redirect with success message
-    window.location.href = "/Home.html?status=success&message=Payment+successful!";
+    window.location.href = "./Home.html?status=success&message=Payment+successful!";
     return true;
 }
 
