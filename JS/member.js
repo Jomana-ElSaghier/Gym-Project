@@ -275,7 +275,7 @@ function confirmMembership() {
   const plan = sessionStorage.getItem("selectedPlan");
   const price = sessionStorage.getItem("selectedPrice");
 
-  window.location.href = `checkout.html?plan=${plan}&price=${price}`;
+  window.location.href = `Checkout.html?plan=${plan}&price=${price}`;
 
   closeModal();
 }
