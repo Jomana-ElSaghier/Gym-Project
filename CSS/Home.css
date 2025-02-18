@@ -73,7 +73,6 @@ body {
     }
     .tt {
         position: relative;
-        bottom: 5%;
         left: 38%;
         animation: fade-in2 1s linear both;
         animation-timeline: view();
