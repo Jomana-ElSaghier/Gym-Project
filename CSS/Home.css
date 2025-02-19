@@ -212,8 +212,8 @@ body {
 }
 
 /* msg */
-{
-.card {
+
+#error-popup  {
     width: 330px;
     height: 80px;
     border-radius: 8px;
@@ -222,7 +222,10 @@ body {
     background-color: #ffffff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70px;
     right: 20px;
     overflow: hidden;
     display: flex;
@@ -232,7 +235,7 @@ body {
     z-index: 1000;
 }
 
-.wave {
+#error-popup .wave {
     position: absolute;
     transform: rotate(90deg);
     left: -31px;
@@ -241,7 +244,7 @@ body {
     fill: #fc0c0c3a;
 }
 
-.icon-container {
+#error-popup .icon-container {
     width: 35px;
     height: 35px;
     display: flex;
@@ -252,9 +255,10 @@ body {
     margin-left: 8px;
 }
 
-.icon {
+#error-popup .icon {
     width: 17px;
     height: 17px;
+    margin-left: 15px;
     color: #d10d0d;
 }
 
@@ -272,7 +276,7 @@ body {
     cursor: default;
 }
 
-.message-text {
+#error-popup .message-text {
     color: #d10d0d;
     font-size: 17px;
     font-weight: 700;
@@ -290,7 +294,7 @@ body {
     cursor: pointer;
 }
 /* Success Popup Styles */
-.card {
+#success-popup {
     width: 330px;
     height: 80px;
     border-radius: 8px;
@@ -299,7 +303,10 @@ body {
     background-color: #ffffff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70px;
     right: 20px;
     overflow: hidden;
     display: flex;
@@ -309,7 +316,7 @@ body {
     z-index: 1000;
 }
 
-.wave {
+#success-popup .wave {
     position: absolute;
     transform: rotate(90deg);
     left: -31px;
@@ -318,7 +325,7 @@ body {
     fill: #04e4003a;
 }
 
-.icon-container {
+#success-popup .icon-container {
     width: 35px;
     height: 35px;
     display: flex;
@@ -329,9 +336,10 @@ body {
     margin-left: 8px;
 }
 
-.icon {
+#success-popup .icon {
     width: 17px;
     height: 17px;
+    margin-left: 15px;
     color: #269b24;
 }
 
@@ -349,7 +357,7 @@ body {
     cursor: default;
 }
 
-.message-text {
+#success-popup .message-text {
     color: #269b24;
     font-size: 17px;
     font-weight: 700;
@@ -365,7 +373,6 @@ body {
     height: 18px;
     color: #555;
     cursor: pointer;
-}
 }
 
 /* Media Queries */
